@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashien | resume</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- google字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playball&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
+    ></script>
+    <!-- timeline套件Start -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    ></script>
+    <!-- timeline套件End -->
+
+    <!-- timeline套件2 Start -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    /> -->
+    <!-- timeline套件2 End -->
+
+    <link
+      rel="Shortcut Icon"
+      type="image/x-icon"
+      class="icon"
+      href="image/curriculum.png"
+    />
+    <link rel="stylesheet" href="timeline-style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-target="#navbar-spy" data-spy="scroll">
+    <!-- <nav class="navbar">
+      <a href="#" class="logo">Shelby's Resume</a>
+      <ul class="menuList">
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-spy">
+      <a href="#" class="navbar-brand logo">Yashien's Resume</a>
+
+      <!-- 1. 按鈕角色、3. 定義按鈕能觸發選單、4. 建立選單與按鈕之間的關聯、加上 aria-haspopup -->
+      <!-- a. 注意細節: aria-label -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        aria-haspopup="menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 5. 選單角色 -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" role="menu">
+        <div class="navbar-nav menuList">
+          <!-- b. 注意細節: 移除 .sr-only 改成 aria-current -->
+          <a class="nav-item nav-link" href="#aboutMe" aria-current="page"
+            >About Me</a
+          >
+          <a class="nav-item nav-link" href="#experience">Experience</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <!-- c. 注意細節: disabled 的處理 -->
+          <!-- <a
+            class="nav-item nav-link disabled"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >Disabled</a
+          > -->
+        </div>
+      </div>
+    </nav>
+    <div class="parallax bg1">
+      <div class="opacityLayer"></div>
+
+      <h1>Yashien's Portfolio</h1>
+
+      <a class="slide_down" href="#aboutMe"></a>
+      <div class="arrow_img">
+        <div class="arrow arrow-1"></div>
+        <div class="arrow arrow-2"></div>
+        <div class="arrow arrow-3"></div>
+      </div>
+    </div>
+    <div class="aboutMe" id="aboutMe">
+      <h2 class="subTitle">About Me</h2>
+      <div class="container">
+        <p>
+          勇敢跳脫舒適圈，選擇追隨內心的聲音，轉職前端工程師，希望盡快達成目標。<br />
+          享受以程式碼呈現前端畫面的樂趣，樂於學習新知識求進步、認真負責，
+          同時也具設計美感、喜歡質感的設計，並盡力將事情做到最好。<br />
+          從無到有的自學及參加線上課程，學習前端各種相關技能，目前主要使用原生JavaScript、HTML、CSS、Bootrap等，並正在努力學習Vue.js當中。<br />
+          曾做過專案:
+          結合交通部提供之TDX資料服務API，導入JS地圖函式庫Leaflets及圖資服務MapBox，做出<span
+            style="font-weight: bold"
+            >台灣觀光旅遊景點網站</span
+          >及<span style="font-weight: bold">自行車道地圖資訊整合網站</span
+          >，從切版到串接API資料，從中得到不少樂趣，享受從無到有的過程及完成專案的成就感。
+        </p>
+      </div>
+    </div>
+    <div class="whatIave parallax bg2">
+      <h2>What I have</h2>
+      <a class="slide_down" href="#experience"></a>
+
+      <div class="arrow_img">
+        <div class="arrow arrow-1"></div>
+        <div class="arrow arrow-2"></div>
+        <div class="arrow arrow-3"></div>
+      </div>
+    </div>
+
+    <div class="experience" id="experience">
+      <h2 class="subTitle">experience</h2>
+      <div class="exContainer">
+        <!-- timeline-2套件start -->
+        <div class="container">
+          <!-- <h4>Timeline Style : Demo-1</h4> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="main-timeline">
+                <!--Vue -->
+                <div class="timeline">
+                  <a href="" class="timeline-icon"
+                    ><img class="vueImg" src="image/vue.png" alt=""
+                  /></a>
+                  <!-- <i class="fa fa-rocket"></i> -->
+                  <a href="" class="timeline-content">
+                    <h3 class="title">Vue 作品實戰班</h3>
+                    <span>JAN 2022 - MAR 2022</span>
+                    <span class="school">六角學院</span>
+
+                    <p class="description">
+                      經 JavaScript 養成班訓練後，能夠掌握JS基本運用。<br />
+                      目前努力學習Vue.js中，希望透過實作作品以熟悉Vue框架、加速開發，並同時求職中，希望盡快往目標邁進!
+                    </p>
+                  </a>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="timeline">
+                  <a href="#projects" class="timeline-icon">
+                    <img class="jsImg" src="image/images.png" alt="" />
+                  </a>
+                  <a href="#projects" class="timeline-content">
+                    <h3 class="title">JavaScript養成班</h3>
+                    <span>OCT 2021 - DEC 2021</span>
+                    <span class="school">六角學院</span>
+
+                    <p class="description" style="padding-left: 35px">
+                      參加了台灣前端領域教育學院「六角學院」的JS養成班，從中更扎實了對JavaSCript的基本觀念。
+                      並將所學知識透過實作、整合串接API，呈現出最終作品。<br />
+                      結合交通部提供之TDX資料服務API，導入JS地圖函式庫Leaflets及圖資服務MapBox，做出觀光旅遊景點
+                      & 自行車道地圖資訊整合網讓使用者方便查詢相關資訊:
+                      <br />
+                      1. 台灣旅遊景點導覽 <br />
+                      2. 自行車道地圖資訊整合網
+                    </p>
+                  </a>
+                </div>
+
+                <!-- iThome 鐵人賽  -->
+                <div class="timeline">
+                  <a
+                    href="https://ithelp.ithome.com.tw/users/20141293/ironman/4548"
+                    target="_blank"
+                    class="timeline-icon"
+                    ><i class="fa fa-rocket"></i
+                  ></a>
+                  <a
+                    href="https://ithelp.ithome.com.tw/users/20141293/ironman/4548"
+                    target="_blank"
+                    class="timeline-content"
+                  >
+                    <h3 class="title">2021 iThome 鐵人賽</h3>
+                    <span>SEP 01 2021 - SEP 30 2021</span>
+                    <span class="school">iT邦幫忙</span>
+
+                    <p class="description">
+                      決定要以「前端工程師」的目標邁進後，努力自學了HTML、CSS、JavaScript
+                      / jQuery等前端相關技術。<br />
+                      並為了讓自己更熟悉JavaScript，參加了2021第十三屆iThome鐵人賽，挑戰在"iT邦幫忙"網站上，
+                      連續30天不中斷的發表JavaScript技術文章，並在最終成功的完賽。
+                    </p>
+                  </a>
+                </div>
+
+                <!--緯育 -->
+                <div class="timeline">
+                  <a href="#" class="timeline-icon">
+                    <i class="fa fa-briefcase"></i>
+                  </a>
+                  <a href="#" class="timeline-content">
+                    <h3 class="title">AI / Big Data 資料分析師養成班</h3>
+                    <span>OCT 2020 - MAR 2021</span>
+                    <span class="school">緯育 Tibame</span>
+
+                    <p class="description">
+                      決定轉職後參加了緯育AI/Big
+                      Data資料分析師養成班，在緯育學習了程式語言Python、資料庫MySQL
+                      / MongoDB / Redis 、分散式系統Kafka /
+                      Hadoop、叢集運算框架Spark、Azure AI API
+                      做機器學習等相關技術，並在小組專題中負責了前後端串接的部分，也在這過程中發現自己對前端呈現的部分很有興趣，
+                      享受透過程式碼以渲染前端畫面的樂趣，而決定以「前端工程師」為目標邁進。
+                    </p>
+                  </a>
+                </div>
+
+                <!-- shipping -->
+                <div class="timeline">
+                  <a href="#" class="timeline-icon"
+                    ><i class="fa fa-globe"></i
+                  ></a>
+                  <a href="#" class="timeline-content">
+                    <h3 class="title">shipping specialist</h3>
+                    <span>JUN 2013 - JUN 2020</span>
+                    <p class="description">
+                      過去工作經驗都是擔任船務一職，幾經思考自身興趣與未來層面後，決定轉職並往IT領域發展，跳脫舒適圈重新來過。
+                      船務是各部門間的溝通橋樑，所以在船務的經歷中，也學習到了如何跨部門溝通，與工廠、國外客戶、內部PM及財務協調溝通，以達到對公司最大的效益。
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills parallax bg3" id="skills">
+      <div class="opacityLayer"></div>
+      <h2 class="subTitle">skills</h2>
+      <div class="container">
+        <div class="row sideProjectsBox">
+          <div class="col-sm-12 col-md-3 content">
+            <ul class="skill_list">
+              <li class="title">Front End</li>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+              <li>RWD</li>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 content">
+            <ul class="skill_list">
+              <li class="title">Back End</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>ASP.net</li>
+              <li>Mongo DB</li>
+              <li>MySQL / MsSQL</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 content">
+            <ul class="skill_list">
+              <li class="title">Others</li>
+              <li>Git / GitHub</li>
+              <li>slack</li>
+              <li>Trello</li>
+              <li>Linux</li>
+              <li>Ngrok</li>
+              <li>Azure AI</li>
+              <li>IIS</li>
+              <li>Power BI</li>
+
+              <li>InDesign</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <h2 class="subTitle">Projects</h2>
+      <div class="container">
+        <ul class="row allProjectDiv">
+          <li class="perProject">
+            <a href="https://yashien-lin.github.io/bikdland/" target="_blank">
+              <div class="cover">
+                <p>串接第三方API</p>
+                <p>自行車道地圖資訊整合網</p>
+              </div>
+              <div class="perProjectBox">
+                <img src="image/bike_cover.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="perProject">
+            <a
+              href="https://yashien-lin.github.io/TaiwanTraveler/"
+              target="_blank"
+            >
+              <div class="cover">
+                <p>串接第三方API</p>
+                <p>台灣旅遊景點導覽</p>
+              </div>
+              <div class="perProjectBox">
+                <img src="image/tavel_cover.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="perProject">
+            <a
+              href="https://yashien-lin.github.io/WowoRoom/index.html"
+              target="_blank"
+            >
+              <div class="cover">
+                <p>串接API</p>
+                <p>寢具電商網站</p>
+              </div>
+              <div class="perProjectBox">
+                <img src="image/wowo.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="perProject">
+            <a href="https://shoeishop.neocities.org/" target="_blank">
+              <div class="cover">
+                <p>初期RWD純切版練習</p>
+                <p>球鞋電商網站</p>
+              </div>
+              <div class="perProjectBox">
+                <img src="image/shoei_shop.png" alt="" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="haedShot_div">
+        <img src="image/IMG_3215.JPG" alt="" />
+      </div>
+      <ul class="contact_info">
+        <li>yahienxxxx@gmail.com</li>
+        <li>0918-533-573</li>
+        <li>Taipei, Taiwan</li>
+        <li class="icons">
+          <a class="link" href="https://github.com/Yashien-Lin"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a class="link" href="mailto:yahienxxxx@gmail.com"
+            ><i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+
+          <a href="https://ithelp.ithome.com.tw/users/20141293/ironman/4548"
+            ><img class="iThome" src="image/logo.svg" alt="iT邦幫忙連結"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
