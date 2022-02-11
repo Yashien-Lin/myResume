@@ -3348,12 +3348,6 @@ h4 {
   }
 }
 
-/* @media only screen and (max-width: 1280px) {
-  .main-timeline .timeline-icon {
-    left: 30%;
-  }
-} */
-
 .main-timeline .timeline:nth-child(5n) .timeline-content:after,
 .main-timeline .timeline:nth-child(5n) .timeline-icon svg,
 .main-timeline .timeline:nth-child(5n) .timeline-icon:before,

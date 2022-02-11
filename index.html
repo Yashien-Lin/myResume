@@ -16,13 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playball&display=swap"
       rel="stylesheet"
     />
-
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-      crossorigin="anonymous"
-    /> -->
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -40,16 +34,7 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     ></script>
-    <!-- timeline套件End -->
-
-    <!-- timeline套件2 Start -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    /> -->
-    <!-- timeline套件2 End -->
+  
 
     <link
       rel="Shortcut Icon"
@@ -61,20 +46,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-target="#navbar-spy" data-spy="scroll">
-    <!-- <nav class="navbar">
-      <a href="#" class="logo">Shelby's Resume</a>
-      <ul class="menuList">
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav> -->
+
 
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar-spy">
       <a href="#" class="navbar-brand logo">Yashien's Resume</a>
-
-      <!-- 1. 按鈕角色、3. 定義按鈕能觸發選單、4. 建立選單與按鈕之間的關聯、加上 aria-haspopup -->
-      <!-- a. 注意細節: aria-label -->
       <button
         class="navbar-toggler"
         type="button"
@@ -87,10 +62,8 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- 5. 選單角色 -->
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup" role="menu">
         <div class="navbar-nav menuList">
-          <!-- b. 注意細節: 移除 .sr-only 改成 aria-current -->
           <a class="nav-item nav-link" href="#aboutMe" aria-current="page"
             >About Me</a
           >
@@ -98,14 +71,6 @@
           <a class="nav-item nav-link" href="#skills">Skills</a>
           <a class="nav-item nav-link" href="#projects">Projects</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
-          <!-- c. 注意細節: disabled 的處理 -->
-          <!-- <a
-            class="nav-item nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          > -->
         </div>
       </div>
     </nav>
@@ -152,19 +117,23 @@
     <div class="experience" id="experience">
       <h2 class="subTitle">experience</h2>
       <div class="exContainer">
-        <!-- timeline-2套件start -->
         <div class="container">
-          <!-- <h4>Timeline Style : Demo-1</h4> -->
           <div class="row">
             <div class="col-md-12">
               <div class="main-timeline">
                 <!--Vue -->
                 <div class="timeline">
-                  <a href="" class="timeline-icon"
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    target="_blank"
+                    class="timeline-icon"
                     ><img class="vueImg" src="image/vue.png" alt=""
                   /></a>
-                  <!-- <i class="fa fa-rocket"></i> -->
-                  <a href="" class="timeline-content">
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    target="_blank"
+                    class="timeline-content"
+                  >
                     <h3 class="title">Vue 作品實戰班</h3>
                     <span>JAN 2022 - MAR 2022</span>
                     <span class="school">六角學院</span>
@@ -178,15 +147,23 @@
 
                 <!-- JavaScript -->
                 <div class="timeline">
-                  <a href="#projects" class="timeline-icon">
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    class="timeline-icon"
+                    target="_blank"
+                  >
                     <img class="jsImg" src="image/images.png" alt="" />
                   </a>
-                  <a href="#projects" class="timeline-content">
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    target="_blank"
+                    class="timeline-content"
+                  >
                     <h3 class="title">JavaScript養成班</h3>
                     <span>OCT 2021 - DEC 2021</span>
                     <span class="school">六角學院</span>
 
-                    <p class="description" style="padding-left: 35px">
+                    <p class="description">
                       參加了台灣前端領域教育學院「六角學院」的JS養成班，從中更扎實了對JavaSCript的基本觀念。
                       並將所學知識透過實作、整合串接API，呈現出最終作品。<br />
                       結合交通部提供之TDX資料服務API，導入JS地圖函式庫Leaflets及圖資服務MapBox，做出觀光旅遊景點
@@ -226,10 +203,18 @@
 
                 <!--緯育 -->
                 <div class="timeline">
-                  <a href="#" class="timeline-icon">
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    target="_blank"
+                    class="timeline-icon"
+                  >
                     <i class="fa fa-briefcase"></i>
                   </a>
-                  <a href="#" class="timeline-content">
+                  <a
+                    href="https://github.com/Yashien-Lin"
+                    target="_blank"
+                    class="timeline-content"
+                  >
                     <h3 class="title">AI / Big Data 資料分析師養成班</h3>
                     <span>OCT 2020 - MAR 2021</span>
                     <span class="school">緯育 Tibame</span>
@@ -271,7 +256,7 @@
       <h2 class="subTitle">skills</h2>
       <div class="container">
         <div class="row sideProjectsBox">
-          <div class="col-sm-12 col-md-3 content">
+          <div class="col-xs-8 col-sm-8 col-md-3 content">
             <ul class="skill_list">
               <li class="title">Front End</li>
               <li>HTML5 / CSS3</li>
@@ -284,7 +269,7 @@
               <li>Photoshop</li>
             </ul>
           </div>
-          <div class="col-sm-12 col-md-3 content">
+          <div class="col-xs-8 col-sm-8 col-md-3 content">
             <ul class="skill_list">
               <li class="title">Back End</li>
               <li>Python</li>
@@ -294,7 +279,7 @@
               <li>MySQL / MsSQL</li>
             </ul>
           </div>
-          <div class="col-sm-12 col-md-3 content">
+          <div class="col-xs-8 col-sm-8 col-md-3 content">
             <ul class="skill_list">
               <li class="title">Others</li>
               <li>Git / GitHub</li>
@@ -315,16 +300,16 @@
 
     <div class="projects" id="projects">
       <h2 class="subTitle">Projects</h2>
-      <div class="container">
+      <div class="project container">
         <ul class="row allProjectDiv">
           <li class="perProject">
-            <a href="https://yashien-lin.github.io/bikdland/" target="_blank">
+            <a href="https://yashien-lin.github.io/bikeland/" target="_blank">
               <div class="cover">
                 <p>串接第三方API</p>
                 <p>自行車道地圖資訊整合網</p>
               </div>
               <div class="perProjectBox">
-                <img src="image/bike_cover.png" alt="" />
+                <img src="image/bike_cover2.png" alt="" />
               </div>
             </a>
           </li>
@@ -380,14 +365,16 @@
         <li>0918-533-573</li>
         <li>Taipei, Taiwan</li>
         <li class="icons">
-          <a class="link" href="https://github.com/Yashien-Lin"
+          <a class="link" target="_blank" href="https://github.com/Yashien-Lin"
             ><i class="fab fa-github"></i
           ></a>
-          <a class="link" href="mailto:yahienxxxx@gmail.com"
+          <a class="link" target="_blank" href="mailto:yahienxxxx@gmail.com"
             ><i class="fa fa-envelope" aria-hidden="true"></i
           ></a>
 
-          <a href="https://ithelp.ithome.com.tw/users/20141293/ironman/4548"
+          <a
+            target="_blank"
+            href="https://ithelp.ithome.com.tw/users/20141293/ironman/4548"
             ><img class="iThome" src="image/logo.svg" alt="iT邦幫忙連結"
           /></a>
         </li>
@@ -395,11 +382,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="script.js"></script>

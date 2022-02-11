@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -128,8 +123,7 @@ table {
   border-spacing: 0;
 }
 
-/* 從此開始 */
-
+/* stsrt */
 html {
   scroll-behavior: smooth;
 }
@@ -194,19 +188,9 @@ a:active {
   white-space: nowrap;
 }
 
-/* .menuList a {
-  color: #ffffff;
-  padding: 5px 2px;
-} */
-
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 65%);
 }
-
-/* .menuList a:hover {
-  color: #ffffff;
-  text-shadow: 0.1em 0.3em 0.15em #0a0a0a;
-} */
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
@@ -225,10 +209,6 @@ a:active {
 .navbar-toggler {
   background-color: white;
 }
-
-/* .menuList a:active {
-  border-bottom: 2px solid white;
-} */
 
 body {
   margin: 0;
@@ -289,10 +269,6 @@ body {
   visibility: hidden;
   margin-top: -55px;
 }
-
-/* .height {
-  height: 60px;
-} */
 
 .aboutMe p {
   line-height: 55px;
@@ -462,8 +438,8 @@ body {
     opacity: 0;
   }
 }
-/* 箭頭動畫 End*/
 
+/* 箭頭動畫 End*/
 .sideProjectsBox {
   display: flex;
   justify-content: center;
@@ -474,14 +450,10 @@ body {
 .content {
   background: #fbd6ba;
   border-radius: 6px;
-  /* width: 26%; */
+  width: 80%;
   padding: 20px;
   box-shadow: 0.15em 0.15em 0.15em #333;
 }
-
-/* .content p {
-  line-height: 20px;
-} */
 
 .bg3 {
   background-image: url("image/bg4.jpg");
@@ -564,11 +536,8 @@ body {
 .perProjectBox {
   overflow: hidden;
   border-radius: 10px;
-  /* width: 240px;
-  height: 143px; */
   width: 100%;
   height: 100%;
-  /* outline: 2px solid #000000; */
 }
 
 .perProjectBox img {
@@ -589,14 +558,6 @@ body {
   /* background: #6b9bde; */
   background: #000000;
 }
-/* 
-.contact:before {
-  content: "";
-  display: block;
-  height: 120px;
-  visibility: hidden;
-  margin-top: -55px;
-} */
 
 .haedShot_div {
   width: 177px;
@@ -650,7 +611,6 @@ a.slide_down {
 }
 
 /* RWD */
-
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: row;
@@ -697,6 +657,10 @@ a.slide_down {
   .skills:before {
     height: 63px;
   }
+
+  .project.container {
+    max-width: 830px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -707,14 +671,25 @@ a.slide_down {
   .cover {
     font-size: 80%;
   }
-  /* .col-md-4 {
-    max-width: 30%;
-  } */
+
+  .allProjectDiv li {
+    width: 45%;
+    font-size: 20px;
+  }
+
+  .allProjectDiv {
+    row-gap: 22px;
+  }
 }
 
 @media (max-width: 576px) {
   .allProjectDiv li {
-    width: 95%;
+    width: 82%;
+    font-size: 20px;
+  }
+
+  .allProjectDiv {
+    gap: 30px;
   }
 }
 
@@ -759,18 +734,7 @@ a.slide_down {
     margin-top: 15px;
   }
 
-  /* .allProjectDiv li {
-    width: 95%;
-  } */
-
   .cover {
     font-size: 100%;
   }
-  /* .navbar {
-    height: 75px;
-  }
-
-  .navbar .logo {
-    line-height: 75px;
-  } */
 }
