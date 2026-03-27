@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashien Lin — Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@300;400;500&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-bg"></div>
+
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">YL.DEV</a>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav_about">關於我</a></li>
+          <li><a href="#experience" data-i18n="nav_exp">職涯經歷</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">技能</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">作品集</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">聯絡</a></li>
+          <li><button class="lang-btn" id="langBtn">EN</button></li>
+        </ul>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <button class="lang-btn" id="langBtnMobile" style="display: none">
+            EN
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" data-i18n="nav_about">關於我</a>
+      <a href="#experience" data-i18n="nav_exp">職涯經歷</a>
+      <a href="#skills" data-i18n="nav_skills">技能</a>
+      <a href="#projects" data-i18n="nav_projects">作品集</a>
+      <a href="#contact" data-i18n="nav_contact">聯絡</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="glow-br"></div>
+      <div class="glow-tl"></div>
+      <div class="inner">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="hero-eyebrow">
+              <span>//</span
+              ><span data-i18n="hero_ey">FRONTEND ENGINEER · TAIWAN</span>
+            </div>
+            <h1 class="hero-name" data-text="YASHIEN LIN">
+              <span id="typedName"></span><span class="cursor"></span>
+            </h1>
+            <div class="hero-divider"></div>
+            <div class="hero-role" data-i18n="hero_role">
+              Vue / Nuxt · React / Next · 三年開發經驗
+            </div>
+            <p class="hero-desc" data-i18n="hero_desc">
+              從切版到串接 API，享受從 0 到 1
+              的開發過程。對效能、細節與使用者體驗有強烈執著。
+            </p>
+            <div class="hero-btns">
+              <a href="#projects" class="btn-p" data-i18n="hero_cta1"
+                >查看作品集</a
+              >
+              <a href="#contact" class="btn-g" data-i18n="hero_cta2">聯絡我</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric">
+                <div class="metric-num">3</div>
+                <div class="metric-label" data-i18n="m_yr">年業界經驗</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">3+</div>
+                <div class="metric-label" data-i18n="m_pr">個人作品</div>
+              </div>
+              <div class="metric">
+                <div class="metric-num">30</div>
+                <div class="metric-label" data-i18n="m_cf">鐵人賽篇數</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="photo-frame">
+              <img class="photo-img" src="./image/pic.jpeg" alt="Yashien Lin" />
+              <div class="photo-scan"></div>
+              <div class="pc tl"></div>
+              <div class="pc br"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">01</span>
+          <h2 class="sec-title" data-i18n="nav_about">關於我</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="about-cols">
+          <div class="about-text reveal">
+            <p data-i18n="ab1">
+              嗨，我是
+              <em>Yashien Lin</em>，擁有三年經驗的前端工程師。主力使用
+              <em>Vue / Nuxt.js</em> 開發產品，並透過個人專案持續深耕
+              <em>React / Next.js</em>，搭配 Tailwind CSS 或 Bootstrap
+              實作響應式介面。
+            </p>
+            <p data-i18n="ab2">
+              從切版到串接 API，享受從無到有的過程。熟悉
+              <em>Git</em> 版本控制、<em>Figma</em> 設計協作與 Slack、Trello
+              等團隊工具，能與設計師、後端工程師及PM緊密合作，在技術挑戰與使用者需求間取得平衡，交付以使用者體驗為核心的功能。
+            </p>
+            <p data-i18n="ab3">
+              持續保持好奇與熱情，期待用程式創造更多兼具
+              <em>功能性與美感</em> 的作品。
+            </p>
+          </div>
+          <div class="philosophy reveal">
+            <div class="phil-item">
+              <div class="phil-n">01</div>
+              <div>
+                <div class="phil-title" data-i18n="ph1t">Performance First</div>
+                <div class="phil-desc" data-i18n="ph1d">
+                  效能是架構決策，不是事後補救。
+                </div>
+              </div>
+            </div>
+            <div class="phil-item">
+              <div class="phil-n">02</div>
+              <div>
+                <div class="phil-title" data-i18n="ph3t">
+                  Code as Communication
+                </div>
+                <div class="phil-desc" data-i18n="ph3d">
+                  程式碼是寫給下一個人看的。
+                </div>
+              </div>
+            </div>
+            <div class="phil-item">
+              <div class="phil-n">03</div>
+              <div>
+                <div class="phil-title" data-i18n="ph4t">Stay Curious</div>
+                <div class="phil-desc" data-i18n="ph4d">
+                  享受學習新技術的過程，保持成長的動力。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title" data-i18n="nav_exp">職涯經歷</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-date">2022.08 — 2025.04</div>
+            <div class="tl-co" data-i18n="exp1_co">星醫美學股份有限公司</div>
+            <div class="tl-role" data-i18n="exp1_role">前端工程師</div>
+            <p class="tl-desc" data-i18n="exp1_desc">
+              使用 Vue 2/3 與 Nuxt 開發與維護多個內部系統與網站，並維護 PHP
+              Laravel 專案，實作以 Blade 進行伺服器端渲染的介面，及整合 Vue 的
+              API 驅動前端，涵蓋 MVC 與 MVVM 架構。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">Vue</span>
+              <span class="tag">Nuxt.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2022.03 — 2022.07</div>
+            <div class="tl-co" data-i18n="exp2_co">坊和企業有限公司</div>
+            <div class="tl-role" data-i18n="exp2_role">前端工程師</div>
+            <p class="tl-desc" data-i18n="exp2_desc">
+              使用 Vue 3 與 Element Plus
+              開發並維護遊戲平台後台，透過抽取可重用元件優化前端架構，提升開發效率。在專案管理上，與後端及
+              PM 緊密合作，並採用 Jira 與 Git 進行的任務管理與團隊協作。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">Vue3</span>
+              <span class="tag">Element Plus</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2021.07 — 2022.10</div>
+            <div class="tl-co" data-i18n="exp3_co">方達科技股份有限公司</div>
+            <div class="tl-role" data-i18n="exp3_role">程式設計師</div>
+            <p class="tl-desc" data-i18n="exp3_desc">
+              負責政府標案與環境工程專案的全端開發，使用 HTML/CSS/JS 搭配 C#
+              ASP.NET 與 MS SQL 實現完整的系統功能。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">Vue3</span>
+              <span class="tag">Element Plus</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2022.01 — 2022.03</div>
+            <div class="tl-co" data-i18n="exp4_co">
+              六角學院 — Vue 作品實戰班
+            </div>
+            <p class="tl-desc" data-i18n="exp4_desc">
+              完成 JavaScript 養成班後進入 Vue 作品實戰班，透過實作專案系統學習
+              Vue 框架，奠定前端工程基礎。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2021.10 - 2021.12</div>
+            <div class="tl-co" data-i18n="exp5_co">
+              六角學院 — JavaScript養成班
+            </div>
+            <p class="tl-desc" data-i18n="exp5_desc">
+              深耕 JavaScript 核心技術，並整合交通部 TDX API、Leaflet
+              與MapBox開發觀光與自行車道地圖平台，實現全台景點資訊的即時查詢與地圖視覺化呈現。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">jQuery</span>
+              <span class="tag">Leaflet</span>
+              <span class="tag">Mapbox</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2021.09</div>
+            <div class="tl-co" data-i18n="exp6_co">
+              iThome 鐵人賽 — 技術文章挑戰
+            </div>
+            <p class="tl-desc" data-i18n="exp6_desc">
+              自學 HTML、CSS、JavaScript / jQuery 後，為強化能力挑戰連續 30
+              天發表 JavaScript 技術文章，最終成功完賽。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag" data-i18n="exp6_tag1">技術寫作</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2020.10 — 2021.03</div>
+            <div class="tl-co" data-i18n="exp7_co">
+              緯育 Tibame — AI / Big Data 養成班
+            </div>
+            <p class="tl-desc" data-i18n="exp7_desc">
+              轉職後學習 Python、MySQL、MongoDB、Spark、Azure AI
+              等技術。在小組專題中負責前後端串接，因此發現對前端開發的濃厚興趣，確立前端工程師的職涯方向。
+            </p>
+            <div class="tl-tags">
+              <span class="tag">Python</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Azure AI</span>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-date">2013.06 — 2020.06</div>
+            <div class="tl-co" data-i18n="exp8_co">船務專員</div>
+            <p class="tl-desc" data-i18n="exp8_desc">
+              擔任各部門溝通橋樑，協調工廠、德國/美國客戶、PM
+              及財務，培養跨部門溝通與多工協調能力。深思後決定轉職踏入 IT
+              領域，重新出發。
+            </p>
+            <div class="tl-tags">
+              <span class="tag" data-i18n="exp8_tag1">跨部門協作</span
+              ><span class="tag" data-i18n="exp8_tag2">國際溝通</span
+              ><span class="tag" data-i18n="exp8_tag3">專案協調</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title" data-i18n="nav_skills">技能</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="skills-wrap">
+          <div class="reveal">
+            <div class="sk-label" data-i18n="sk1">前端框架</div>
+            <div class="sk-pills">
+              <span class="pill feat">Vue</span
+              ><span class="pill feat">Nuxt.js</span>
+              <span class="pill feat">React</span
+              ><span class="pill feat">Next.js</span>
+              <span class="pill">JavaScript</span
+              ><span class="pill">jQuery</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="sk-label" data-i18n="sk2">樣式 &amp; 介面</div>
+            <div class="sk-pills">
+              <span class="pill feat">HTML / SCSS</span>
+              <span class="pill feat">Tailwind CSS</span>
+              <span class="pill feat">Bootstrap</span>
+              <span class="pill">RWD</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="sk-label" data-i18n="sk3">後端 &amp; 資料庫</div>
+            <div class="sk-pills">
+              <span class="pill">MySQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Redis</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="sk-label" data-i18n="sk4">工具 &amp; 工作流</div>
+            <div class="sk-pills">
+              <span class="pill feat">Git</span>
+              <span class="pill feat">Figma</span>
+              <span class="pill">Headless CMS</span>
+              <span class="pill">Linux</span>
+              <span class="pill">Slack</span>
+              <span class="pill">Trello</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title" data-i18n="nav_projects">個人作品</h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+      <div class="projects-inner">
+        <div class="projects-grid">
+          <div class="wk reveal">
+            <div class="wk-thumb t1">
+              <img src="./image/what-to-eat.png" alt="project what-to-eat" />
+              <div class="wk-overlay">
+                <a
+                  target="_blank"
+                  href="https://what-to-eat-ai.vercel.app/"
+                  class="wk-btn"
+                  data-i18n="demo"
+                >
+                  查看 Demo
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/Yashien-Lin/what-to-eat-ai"
+                  class="wk-btn gh"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="wk-body">
+              <div class="wk-name" data-i18n="w1n">今天吃什麼 AI</div>
+              <p class="wk-desc" data-i18n="w1d">
+                由 AI 驅動的美食推薦應用，使用 Next.js 與 Tailwind CSS
+                開發。透過 OpenAI API
+                進行自然語言處理，分析使用者心情與意圖，並整合 Google Places API
+                提供個人化食譜或餐廳。專案部署於 Vercel，配合自動化 CI/CD 流程。
+              </p>
+              <div class="tl-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">Google Places API</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+          <div class="wk reveal">
+            <div class="wk-thumb t2">
+              <img src="./image/law_firm.png" alt="project law firm" />
+              <div class="wk-overlay">
+                <a
+                  target="_blank"
+                  href="https://zhengmao-lawfirm.netlify.app/"
+                  class="wk-btn"
+                  data-i18n="demo"
+                >
+                  查看 Demo
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/Yashien-Lin/nuxt-law"
+                  class="wk-btn gh"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="wk-body">
+              <div class="wk-name" data-i18n="w2n">律師事務所網站</div>
+              <p class="wk-desc" data-i18n="w2d">
+                前端使用 Nuxt.js 並以 SSG
+                模式預先生成靜態頁面，提升效能與載入速度。後端整合 Headless CMS
+                Strapi，透過 API 提供內容，實現前後端分離。 <br />
+                專案採 Netlify (前端) 與 Railway (後端)
+                分離部署，提升效能與部署彈性。
+              </p>
+              <div class="tl-tags">
+                <span class="tag">Nuxt 3</span>
+                <span class="tag">SSG</span>
+                <span class="tag">Strapi</span>
+                <span class="tag">Bootstrap 5</span>
+                <span class="tag">Netlify</span>
+                <span class="tag">Railway</span>
+              </div>
+            </div>
+          </div>
+          <div class="wk reveal">
+            <div class="wk-thumb t3">
+              <img src="./image/mountain.png" alt="project mountain" />
+              <div class="wk-overlay">
+                <a
+                  target="_blank"
+                  href="https://sheshanlin.xyz/"
+                  class="wk-btn"
+                  data-i18n="demo"
+                >
+                  查看 Demo
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/TaOooo/Moutain"
+                  class="wk-btn gh"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="wk-body">
+              <div class="wk-name" data-i18n="w3n">山居別林民宿網站</div>
+              <p class="wk-desc" data-i18n="w3d">
+                與後端工程師共同接案，含房型介紹、景點資訊、即時空房查詢。<br />
+                使用Vue3 + Tailwind + Vite，全程參與從設計、切版到 API
+                串接，學習到如何從無到有的建立一個專案。
+              </p>
+              <div class="tl-tags">
+                <span class="tag">Vue 3</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">Vite</span>
+                <span class="tag">RWD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="inner">
+        <div class="sec-head reveal">
+          <span class="sec-num">05</span>
+          <h2 class="sec-title" data-i18n="nav_contact">聯絡方式</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="contact-cols">
+          <div class="reveal">
+            <div class="ct-hl" data-i18n="ct_hl">Let's connect.</div>
+            <p class="ct-sub"></p>
+            <div class="ct-links">
+              <!-- Email icon -->
+              <a href="mailto:yashien@example.com" class="c-link">
+                <div class="c-icon">
+                  <svg
+                    style="width: 1.25rem"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                        fill="#080341"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <div class="c-lbl">Email</div>
+                  <div class="c-val">yashienxxxx@gmail.com</div>
+                </div>
+              </a>
+              <!-- LinkedIn icon -->
+              <a
+                class="c-link"
+                target="_blank"
+                href="https://www.linkedin.com/in/yashien-lin-20470720b/"
+              >
+                <div class="c-icon">
+                  <svg
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>linkedin</title>
+                      <path
+                        fill="currentColor"
+                        d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <div class="c-lbl">LinkedIn</div>
+                  <div class="c-val">
+                    linkedin.com/in/yashien-lin-20470720b/
+                  </div>
+                </div>
+              </a>
+              <!-- GitHub icon -->
+              <a
+                class="c-link"
+                target="_blank"
+                href="https://github.com/Yashien-Lin"
+              >
+                <div class="c-icon">
+                  <svg
+                    aria-hidden="true"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="c-lbl">GitHub</div>
+                  <div class="c-val">github.com/Yashien-Lin</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="info-cards reveal">
+            <div class="ic">
+              <div class="ic-l" data-i18n="ic1l">目前狀態</div>
+              <div class="ic-v" data-i18n="ic1v">
+                <span>開放新機會</span>
+              </div>
+            </div>
+            <div class="ic">
+              <div class="ic-l" data-i18n="ic2l">工作地點</div>
+              <div class="ic-v" data-i18n="ic2v">台灣 · 遠端 / 辦公室皆可</div>
+            </div>
+            <div class="ic">
+              <div class="ic-l" data-i18n="ic3l">語言</div>
+              <div class="ic-v">繁體中文 · <span>English</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© 2026 <span class="fa">Yashien Lin</span></span>
+        <span data-i18n="footer">用 ♥ 與過量咖啡構建</span>
+        <a href="#" class="fa">YL.DEV</a>
+      </div>
+    </footer>
+
+    <script type="text/JavaScript" src="script.js"></script>
+  </body>
+</html>
